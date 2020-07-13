@@ -53,3 +53,4 @@ jspm_packages
 *.swp
 .tags*
 shelljs_*
+!node_modules/ipv6
