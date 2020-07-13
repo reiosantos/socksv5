@@ -13,7 +13,7 @@ Requirements
 Install
 =======
 
-    npm install socksv5
+    npm install san-socksv5
 
 
 Examples
@@ -22,7 +22,7 @@ Examples
 * Server with no authentication and allowing all connections:
 
 ```javascript
-var socks = require('socksv5');
+var socks = require('san-socksv5');
 
 var srv = socks.createServer(function(info, accept, deny) {
   accept();

@@ -1,6 +1,6 @@
 {
   "name": "san-socksv5",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "author": "Brian White <mscdex@mscdex.net>",
   "description": "SOCKS protocol version 5 server and client implementations for node.js",
   "main": "./index",
@@ -21,8 +21,8 @@
     "node": ">=0.10.0"
   },
   "keywords": [
-    "@san",
     "san",
+    "san-socks",
     "socks",
     "socks5",
     "socksv5",
