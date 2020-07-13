@@ -1,0 +1,9 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Always convert line endings to LF for bash scripts
+*.sh text eol=lf
+
+# Always convert line endings to LF for vpnc scripts
+vpnc-script text eol=lf
+vpnc-script-lynx-split text eol=lf

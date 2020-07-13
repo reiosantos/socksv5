@@ -1,10 +1,15 @@
-{ "name": "socksv5",
-  "version": "0.0.6",
+{
+  "name": "san-socksv5",
+  "version": "0.0.8",
   "author": "Brian White <mscdex@mscdex.net>",
   "description": "SOCKS protocol version 5 server and client implementations for node.js",
   "main": "./index",
+  "private": false,
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node test/test.js",
+    "prepublishOnly": "npm test",
+    "version": "git add -A lib",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "ipv6": "*"
@@ -12,8 +17,25 @@
   "bundledDependencies": [
     "ipv6"
   ],
-  "engines": { "node": ">=0.10.0" },
-  "keywords": [ "socks", "socks5", "socksv5", "proxy" ],
-  "licenses": [ { "type": "MIT", "url": "http://github.com/mscdex/socksv5/raw/master/LICENSE" } ],
-  "repository" : { "type": "git", "url": "http://github.com/mscdex/socksv5.git" }
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "keywords": [
+    "@san",
+    "san",
+    "socks",
+    "socks5",
+    "socksv5",
+    "proxy"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/reiosantos/socksv5/raw/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reiosantos/socksv5.git"
+  }
 }
